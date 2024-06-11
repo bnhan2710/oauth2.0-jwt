@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const authRoute = require('./routes/auth')
+const userRoute = require('./routes/user')
 const app = express();
+
 app.use(express.json());
 
 (async () => {
@@ -19,8 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 app.use('/v1/auth', authRoute);
-
-
+app.use('/v1/user',userRoute)
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
