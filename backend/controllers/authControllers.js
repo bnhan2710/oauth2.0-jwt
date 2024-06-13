@@ -118,6 +118,16 @@ const authControllers = {
             res.status(200).json({ accessToken: newAccessToken });
         });
     },
+    //LOG OUT
+    userLogout: async (req, res) => {
+        try {
+            res.clearCookie("refreshToken");
+            refreshTokens = refreshTokens.filter((token) => token !== req.cookies.refreshToken);
+            res.status(200).json("Logged out successfully");
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    }    
 };
 
 module.exports = authControllers;
