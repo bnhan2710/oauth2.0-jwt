@@ -1,5 +1,5 @@
-# Basic Authentication and authorization App
-
+# JWT Authentication and authorization App
+    JWT Authentication App is a full-stack web application that uses 'React' for the frontend and 'Node.js/Express' for the backend
 ## Installation
 
 ### Prerequisites
