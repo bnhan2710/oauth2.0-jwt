@@ -1,5 +1,4 @@
 const authControllers = require('../controllers/authControllers')
-const passwordControllers = require('../controllers/passwordControllers')
 const middlewareController = require('../middleware/middlewareController')
 
 const router = require('express').Router()
@@ -17,9 +16,9 @@ router.post('/refresh',authControllers.requestRefreshToken)
 router.post('/logout',middlewareController.verifyToken,authControllers.userLogout)
 
 //RESET PASSWORD
-router.post('/reset-password',passwordControllers.resetPassword)
+router.post('/reset/:token',authControllers.resetPassword)
 
 // FORFOT PASSWORD
-router.post('/forgot-password', passwordControllers.forgotPassword);
+router.post('/forgot', authControllers.forgotPassword);
 
 module.exports = router
