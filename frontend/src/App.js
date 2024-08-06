@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import NavBar from "./Components/NavBar/NavBar";
-import { useState } from "react";
-
+// import ResetPassword from "./Components/ResetPassword/ResetPassword";
 function App() {
   return (
     <Router>

@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
+const mailService = require('../Services/mail.service');
 require('dotenv').config();
 
 let refreshTokens = [];

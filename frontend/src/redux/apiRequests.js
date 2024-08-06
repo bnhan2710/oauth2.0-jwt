@@ -72,7 +72,7 @@ export const deleteUser = async (id, dispatch, token) => {
 export const logOut = async (dispatch, navigate) => {
   dispatch(logoutStart());
   try {
-    const res = await axios.post("/v1/auth/logout");
+    await axios.post("/v1/auth/logout");
     dispatch(logoutSuccess());
     dispatch(clearUserList());
     navigate("/login");
