@@ -32,6 +32,14 @@ Make sure you have the following installed on your machine:
     DB_URI=mongodb://localhost:27017/mydatabase
     JWT_ACCESS_KEY=your_jwt_secret
     JWT_REFRESH_KEY=your_jwt_secret
+    EMAIL = your_email
+    EMAIL_PASSWORD = your_email_app_password
+
+    GOOGLE_CLIENT_ID = your_google_client_id
+    GOOGLE_CLIENT_SECRET = your_google_client_secret
+    FACEBOOK_CLIENT_ID = your_fb_client_id
+    FACEBOOK_CLIENT_SECRET = your_fb_client_secret
+    COOKIE_KEY = your_cookie_key
     ```
 
 4. Start the backend server:
