@@ -62,7 +62,7 @@ Make sure you have the following installed on your machine:
     ```bash
     npm start
     ```
-
+   
 ## Usage
 
 1. Ensure both the backend and frontend servers are running.
